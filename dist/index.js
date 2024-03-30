@@ -55,3 +55,15 @@ const funcarr = (...m) => {
     return m;
 };
 funcarr(25, 58, 87, 96, 71, 62);
+function rohitSharma(n) {
+    return 45;
+}
+const getData = (product) => {
+    console.log(product);
+};
+const productOne = {
+    name: "MacBook",
+    photo: "SamplePhotoURL",
+    price: 999999,
+    stock: 85,
+};

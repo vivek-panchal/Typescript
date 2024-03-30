@@ -88,3 +88,40 @@ const funcarr =(...m:number[]) => {
 }
 
 funcarr(25, 58, 87, 96, 71, 62)
+
+function rohitSharma(n:number):number{
+    return 45;
+}
+
+//********** Function with Objects *********
+
+/* Bad Practice
+
+const getData =(product: {
+    name: string;
+    photo: string;
+    price:number;
+    stock:number;
+}): void => {
+    console.log(product);
+}*/
+
+interface Product {
+    name: string;
+    photo: string;
+    price:number;
+    stock:number;
+}
+
+type GetDataType = (product:Product) =>void;
+
+const getData:GetDataType = (product)=> {
+    console.log(product);
+};
+
+const productOne: Product = {
+    name: "MacBook",
+    photo: "SamplePhotoURL",
+    price:999999,
+    stock:85,
+}
