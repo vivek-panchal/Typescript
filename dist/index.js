@@ -67,3 +67,10 @@ const productOne = {
     price: 999999,
     stock: 85,
 };
+// Classes in typeScript
+class Player {
+    constructor() {
+        this.height = 54;
+        this.weight = 78;
+    }
+}

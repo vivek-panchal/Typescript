@@ -125,3 +125,55 @@ const productOne: Product = {
     price:999999,
     stock:85,
 }
+
+
+// Classes in typeScript
+/*class Player {
+    height =54;
+    weight = 78;
+
+    constructor(height:number, weight:number){
+        this.height=height;
+        this.weight=weight;
+    }
+}*/
+
+class Player {
+    constructor(
+        private height:number,
+        public weight:number,
+        protected power?:number,
+    ){}
+}
+
+const vivek = new Player(178,58);
+
+class Player2 extends Player {
+    special : boolean;
+    constructor(height:number,weight:number,power:number,special:boolean ){
+        super(height, weight,power);
+        this.special = special;
+    }
+}
+
+interface ProductType {
+    name: string;
+    price: number;
+    stock: number;
+    id: string;
+    offer?: boolean;
+}
+
+class Product implements ProductType {
+    public name: string;
+    public price: number;
+    public stock: number;
+    public id: string =String(Math.random()*10000);
+
+    constructor(name:string, price:number, stock:number){
+        this.name=name;
+        this.price =price;
+        this.stock=stock;
+
+    }
+}
