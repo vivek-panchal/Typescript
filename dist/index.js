@@ -61,16 +61,77 @@ function rohitSharma(n) {
 const getData = (product) => {
     console.log(product);
 };
-const productOne = {
+/*const productOne: Product = {
     name: "MacBook",
     photo: "SamplePhotoURL",
-    price: 999999,
-    stock: 85,
-};
+    price:999999,
+    stock:85,
+}*/
 // Classes in typeScript
+/*class Player {
+    height =54;
+    weight = 78;
+
+    constructor(height:number, weight:number){
+        this.height=height;
+        this.weight=weight;
+    }
+}*/
 class Player {
-    constructor() {
-        this.height = 54;
-        this.weight = 78;
+    constructor(height, weight, power) {
+        this.height = height;
+        this.weight = weight;
+        this.power = power;
     }
 }
+const vivek = new Player(178, 58);
+class Player2 extends Player {
+    constructor(height, weight, power, special) {
+        super(height, weight, power);
+        this.special = special;
+    }
+}
+class Product {
+    constructor(name, price, stock) {
+        this.id = String(Math.random() * 10000);
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+    }
+}
+/********* Type Assertion **********/
+const btn = document.getElementById("btn");
+const btn = document.getElementById("btn");
+const btn = document.getElementById("btn");
+btn.onclick;
+const img = document.getElementById("myimg");
+const img = document.querySelector("img");
+img.src;
+const form = document.getElementById("myform");
+const myinput = document.querySelector("form > input");
+form.onsubmit = (e) => {
+    e.preventDefault();
+    const h2 = document.createElement("h2");
+    const body = document.querySelector("body");
+    const value = Number(myinput.value);
+    h2.textContent = String(value + 20);
+    body.append(h2);
+};
+Keyof & Index;
+Signature;
+const myobj = {
+    name: "Abhi",
+    email: "abhI@gmail.com",
+};
+let key = "name";
+myobj[key];
+const getName = () => {
+    return myobj["name"];
+};
+const getEmail = () => {
+    return myobj["email"];
+};
+const getData = (key) => {
+    return myobj[key];
+};
+getData("name");
