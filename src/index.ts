@@ -371,3 +371,22 @@ const user:Random ={
     s:"44",
     t:"ssds"
 }
+
+/********* Genrics ************/
+
+type Person2 ={
+    name:string,
+    age:number
+}
+
+const func5 = <CustomType>(n:CustomType):CustomType =>{
+    const text:CustomType = n;
+    return n;
+}
+
+const person: Person2 ={
+    name: "vivek",
+    age: 21,
+}
+
+const ans = func5<Person2>(person);

@@ -173,3 +173,12 @@ const user = {
     s: "44",
     t: "ssds"
 };
+const func5 = (n) => {
+    const text = n;
+    return n;
+};
+const person = {
+    name: "vivek",
+    age: 21,
+};
+const ans = func5(person);
