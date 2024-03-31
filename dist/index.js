@@ -117,11 +117,9 @@ form.onsubmit = (e) => {
     h2.textContent = String(value + 20);
     body.append(h2);
 };
-Keyof & Index;
-Signature;
 const myobj = {
-    name: "Abhi",
-    email: "abhI@gmail.com",
+    name: "Vivek",
+    email: "vivek@gmail.com",
 };
 let key = "name";
 myobj[key];
@@ -135,3 +133,43 @@ const getData = (key) => {
     return myobj[key];
 };
 getData("name");
+const user = {
+    name: "vivek",
+    email: "vivek@gmail.vom"
+};
+const user = {
+    name: "vivek",
+    email: "vivek@gmail.vom"
+};
+const users = {
+    john: { age: 34 },
+    levi: { age: 39 },
+    elon: { age: 24 },
+    jack: { age: 32 },
+};
+/******Parameters<Type>*******/
+const myfunc = (a, b) => {
+    console.log(a + b);
+};
+/*********ConstructorParameters<Type>*********/
+class SampleClass {
+    constructor(s, t) {
+        this.s = s;
+        this.t = t;
+    }
+}
+/************ReturnType<Type>********/
+const myfunc = (a, b) => {
+    return a + b;
+};
+/*******InstanceType<Type>*********/
+class SampleClass {
+    constructor(s, t) {
+        this.s = s;
+        this.t = t;
+    }
+}
+const user = {
+    s: "44",
+    t: "ssds"
+};
